@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const nodemailer = require('nodemailer')
-const { emailPass, emailUser, emailHost, emailTo } = require('../Config')
 const emailBodyConstructor = require('./emailBodyConstructor.js')
 const dotenv = require('dotenv')
 
