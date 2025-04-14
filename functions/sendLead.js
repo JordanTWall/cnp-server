@@ -3,6 +3,13 @@ const router = express.Router()
 const nodemailer = require('nodemailer')
 const { emailPass, emailUser, emailHost, emailTo } = require('../Config')
 const emailBodyConstructor = require('./emailBodyConstructor.js')
+const dotenv = require('dotenv')
+
+const emailPass = process.env.EMAIL_PASS
+const emailUser = process.env.EMAIL_USER
+const emailHost = process.env.EMAIL_HOST
+const emailTo = process.env.EMAIL_TO
+
 
 function sendLead(leadData, quoteInfo) {
   console.log(leadData)
