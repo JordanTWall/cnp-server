@@ -1,0 +1,5 @@
+/node_modules
+.env
+Auth_Legacy.js
+Config.js
+package-lock.json
